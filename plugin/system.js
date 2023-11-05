@@ -15,7 +15,7 @@ const util = require('util')
 //---------------------------------------------------------------------------
 cmd({
             pattern: "addnote",
-            category: "Yasiya Ofc",
+            category: "yasiya ofc",
             desc: "Adds a note on db.",
             filename: __filename
         },
@@ -31,7 +31,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "qr",
-            category: "Yasiya Ofc",
+            category: "yasiya ofc",
             filename: __filename,
             desc: "Sends CitelsVoid Qr code to scan and get your session id."
         },
@@ -72,7 +72,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "unban",
-            category: "Yasiya Ofc",
+            category: "yasiya ofc",
             filename: __filename,
             desc: "Unbans banned user (from using bot)."
         },
@@ -105,7 +105,7 @@ cmd({
         pattern: "img2url",
         react: "🖇️",
         alias : ['createurl'],
-        category: "Yasiya Ofc",
+        category: "yasiya ofc",
         filename: __filename,
         desc: "image to url."
     },
@@ -124,7 +124,7 @@ cmd({
 cmd({
     pattern: "trt",
     alias :['translate'],
-    category: "Yasiya Ofc",
+    category: "yasiya ofc",
     filename: __filename,
     desc: "Translate\'s given text in desird language."
 },
@@ -141,7 +141,7 @@ async(Void, citel, text) => {
     //---------------------------------------------------------------------------
 cmd({
             pattern: "shell",
-            category: "Yasiya Ofc",
+            category: "yasiya ofc",
             filename: __filename,
             desc: "Runs command in Heroku(server) shell."
         },
@@ -159,7 +159,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "eval",
-            category: "Yasiya Ofc",
+            category: "yasiya ofc",
             filename: __filename,
             desc: "Runs js code on node server."
         },
@@ -178,7 +178,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "delnote",
-            category: "Yasiya Ofc",
+            category: "yasiya ofc",
             filename: __filename,
             desc: "Deletes note from db."
         },
@@ -193,7 +193,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "delallnotes",
-            category: "Yasiya Ofc",
+            category: "yasiya ofc",
             filename: __filename,
             desc: "Deletes all notes from db."
         },
@@ -209,7 +209,7 @@ cmd({
 cmd({
             pattern: "ban",
             react: "🚫",
-            category: "Yasiya Ofc",
+            category: "yasiya ofc",
             filename: __filename,
             desc: "Bans user from using bot."
         },
@@ -240,7 +240,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
         pattern: "allnotes",
-        category: "Yasiya Ofc",
+        category: "yasiya ofc",
         filename: __filename,
         desc: "Shows list of all notes."
     },

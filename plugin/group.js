@@ -19,7 +19,7 @@ cmd({
             pattern: "join",
 	    react: "🎩",
             desc: "joins group by link",
-            category: "Yasiya Ofc",
+            category: "yasiya ofc",
             use: '<group link.>',
         },
         async(Void, citel, text,{ isCreator }) => {
@@ -40,7 +40,7 @@ cmd({
             react: "🌄",
             alias: ["s"],
             desc: "Makes sticker of replied image/video.",
-            category: "Yasiya Ofc",
+            category: "yasiya ofc",
             use: '<reply to any image/video.>',
         },
         async(Void, citel, text) => {
@@ -87,7 +87,7 @@ cmd({
         pattern: "support",
 	react: "👨‍💻",
         desc: "Sends official support group link.",
-        category: "Yasiya Ofc",
+        category: "yasiya ofc",
         filename: __filename,
     },
     async(Void, citel, text) => {
@@ -104,7 +104,7 @@ cmd({
 cmd({
             pattern: "warn",
             desc: "Warns user in Group.",
-            category: "Yasiya Ofc",
+            category: "yasiya ofc",
             filename: __filename,
             use: '<quote|reply|number>',
         },
@@ -121,7 +121,7 @@ cmd({
 cmd({
             pattern: "unblock",
             desc: "Unblocked to the quoted user.",
-            category: "Yasiya Ofc",
+            category: "yasiya ofc",
             filename: __filename,
 
         },
@@ -139,7 +139,7 @@ cmd({
     cmd({
         pattern: "ujid",
         desc: "get jid of all user in a group.",
-        category: "Yasiya Ofc",
+        category: "yasiya ofc",
         filename: __filename,
     },
     async(Void, citel, text,{ isCreator }) => {
@@ -159,7 +159,7 @@ cmd({
 cmd({
         pattern: "tagall",
         desc: "Tags every person of group.",
-        category: "Yasiya Ofc",
+        category: "yasiya ofc",
         filename: __filename,
     },
     async(Void, citel, text,{ isCreator }) => {
@@ -192,7 +192,7 @@ cmd({
 cmd({
             pattern: "request",
             desc: "Sends requst to main Bot developer.",
-            category: "Yasiya Ofc",
+            category: "yasiya ofc",
             filename: __filename,
             use: '<text>',
         },
@@ -226,7 +226,7 @@ cmd({
 cmd({
             pattern: "retrive",
             desc: "Copies and Forwords viewonce message.",
-            category: "Yasiya Ofc",
+            category: "yasiya ofc",
             filename: __filename,
             use: '<reply to a viewonce message.>',
         },
@@ -250,7 +250,7 @@ cmd({
 cmd({
             pattern: "rwarn",
             desc: "Deletes all previously given warns of quoted user.",
-            category: "Yasiya Ofc",
+            category: "yasiya ofc",
             filename: __filename,
             use: '<quote|reply|number>',
         },
@@ -265,7 +265,7 @@ cmd({
 cmd({
             pattern: "poll",
             desc: "Makes poll in group.",
-            category: "Yasiya Ofc",
+            category: "yasiya ofc",
             filename: __filename,
             use: `question;option1,option2,option3.....`,
         },
@@ -293,7 +293,7 @@ cmd({
             pattern: "profile",
 	    react: "🧙‍♂️",
             desc: "Shows profile of user.",
-            category: "Yasiya Ofc",
+            category: "yasiya ofc",
             filename: __filename,
         },
         async(Void, citel, text) => {
@@ -390,7 +390,7 @@ cmd({
 cmd({
             pattern: "rank",
             desc: "Sends rank card of user.",
-            category: "Yasiya Ofc",
+            category: "yasiya ofc",
             filename: __filename,
         },
         async(Void, citel, text) => {

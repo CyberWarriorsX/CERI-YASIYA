@@ -471,7 +471,7 @@ cmd({
             pattern: "leaderboard",
             alias: ["deck"],
             desc: "To check leaderboard",
-            category: "Yasiya Ofc",
+            category: "yasiya ofc",
             filename: __filename,
         },
         async(Void, citel) => {
@@ -546,7 +546,7 @@ cmd({
             pattern: "promote",
 	    react: "🎖️",
             desc: "Provides admin role to replied/quoted user",
-            category: "Yasiya Ofc",
+            category: "yasiya ofc",
             filename: __filename,
             use: '<quote|reply|number>',
         },
@@ -574,7 +574,7 @@ cmd({
             pattern: "kick",
 	    react: "👋",
             desc: "Kicks replied/quoted user from group.",
-            category: "Yasiya Ofc",
+            category: "yasiya ofc",
             filename: __filename,
             use: '<quote|reply|number>',
         },
@@ -601,7 +601,7 @@ cmd({
 cmd({
             pattern: "memegen",
             desc: "Write text on quoted image.",
-            category: "Yasiya Ofc",
+            category: "yasiya ofc",
             filename: __filename,
             use: '<text>',
         },
@@ -629,7 +629,7 @@ cmd({
             pattern: "group",
 	    react: "🧑‍🎨",
 	    desc: "mute and unmute group.",
-            category: "Yasiya Ofc",
+            category: "yasiya ofc",
             filename: __filename,
         },
         async(Void, citel, text) => {
@@ -651,7 +651,7 @@ cmd({
                     .catch((err) => console.log(err));
             } else {
 
-                return citel.reply(`Group Mode:\n${prefix}group open- to open\n${prefix}group close- to close`);
+                return citel.reply(`Forzen Md Group Mode:\n${prefix}group unmute- to open\n${prefix}group mute- to close`);
             }
         }
     )
@@ -660,7 +660,7 @@ cmd({
             pattern: "setppgroup",
 	    react: "👨‍🎨",
             desc: "Sets a profile pic in Group..",
-            category: "Yasiya Ofc",
+            category: "yasiya ofc",
             filename: __filename,
         },
         async(Void, citel, text) => {
@@ -692,7 +692,7 @@ cmd({
             pattern: "hidetag",
             alias: ["htag"],
             desc: "Tags everyperson of group without mentioning their numbers",
-            category: "Yasiya Ofc",
+            category: "yasiya ofc",
             filename: __filename,
             use: '<text>',
         },
@@ -719,7 +719,7 @@ cmd({
             react: "🚫",
             desc: "Add that person in group",
             fromMe: true,
-            category: "Yasiya Ofc",
+            category: "yasiya ofc",
             filename: __filename,
             use: '<number>',
         },
@@ -742,7 +742,7 @@ cmd({
 cmd({
             pattern: "gjid",
             desc: "Sends chat id of every groups.",
-            category: "Yasiya Ofc",
+            category: "yasiya ofc",
             filename: __filename,
         },
         async(Void, citel, text,{ isCreator }) => {
@@ -771,7 +771,7 @@ cmd({
         pattern: "demote",
 	react: "⤵️",
         desc: "Demotes replied/quoted user from group",
-        category: "Yasiya Ofc",
+        category: "yasiya ofc",
         filename: __filename,
         use: '<quote|reply|number>',
     },
@@ -800,7 +800,7 @@ cmd({
             pattern: "del",
             alias: ["delete"],
             desc: "Deletes message of any user",
-            category: "Yasiya Ofc",
+            category: "yasiya ofc",
             filename: __filename,
             use: '<quote/reply message.>',
         },
@@ -839,7 +839,7 @@ cmd({
 cmd({
             pattern: "checkwarn",
             desc: "Check warns",
-            category: "Yasiya Ofc",
+            category: "yasiya ofc",
             filename: __filename,
             use: '<quoted/reply user.>',
         },
@@ -865,7 +865,7 @@ cmd({
             pattern: "block",
             desc: "blocks that person",
             fromMe: true,
-            category: "Yasiya Ofc",
+            category: "yasiya ofc",
             filename: __filename,
             use: '<quote/reply user.>',
         },
@@ -885,7 +885,7 @@ cmd({
         alias: ["bc"],
         desc: "Bot makes a broadcast in all groups",
         fromMe: true,
-        category: "Yasiya Ofc",
+        category: "yasiya ofc",
         filename: __filename,
         use: '<text for broadcast.>',
     },

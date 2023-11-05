@@ -57,7 +57,7 @@ Secktor.cmd({
                 let str = `╭────《 ` + fancytext(Config.ownername.split(' ')[0], 58) + ` 》─────⊷\n`
                 str +=
                     '```' + `│ ╭──────────────◆
-│ │ FORZEN-MD SUP GROUP BOT
+│ │ _*FORZEN-MD SUP GROUP BOT*_
 │ │ 🤵‍♂️ USER:- ${citel.pushName}
 │ │ 💃🏼 DEVELOPER:- YASIYA-OFC
 │ │ 🌙 SUPPORTER:- MR-INDUWARA

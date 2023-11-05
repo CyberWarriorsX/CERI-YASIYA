@@ -6,7 +6,7 @@ cmd({
             pattern: "update",
             react: "🔎",
             desc: "Shows repo\'s refreshed commits.",
-            category: "misc",
+            category: "Yasiya Ofc",
             filename: __filename
         },
         async(Void, citel, text,{ isCreator }) => {

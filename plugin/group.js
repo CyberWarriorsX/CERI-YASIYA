@@ -19,7 +19,7 @@ cmd({
             pattern: "join",
 	    react: "🎩",
             desc: "joins group by link",
-            category: "owner",
+            category: "Yasiya Ofc",
             use: '<group link.>',
         },
         async(Void, citel, text,{ isCreator }) => {
@@ -40,11 +40,11 @@ cmd({
             react: "🌄",
             alias: ["s"],
             desc: "Makes sticker of replied image/video.",
-            category: "group",
+            category: "Yasiya Ofc",
             use: '<reply to any image/video.>',
         },
         async(Void, citel, text) => {
-            if (!citel.quoted) return citel.reply(`*Mention any Image or video Sir.*`);
+            if (!citel.quoted) return citel.reply(`*My Master Yasiya, Mention any Image or video sir.*`);
             let mime = citel.quoted.mtype
             pack = Config.packname
             author = Config.author
@@ -87,7 +87,7 @@ cmd({
         pattern: "support",
 	react: "👨‍💻",
         desc: "Sends official support group link.",
-        category: "group",
+        category: "Yasiya Ofc",
         filename: __filename,
     },
     async(Void, citel, text) => {
@@ -104,12 +104,12 @@ cmd({
 cmd({
             pattern: "warn",
             desc: "Warns user in Group.",
-            category: "group",
+            category: "Yasiya Ofc",
             filename: __filename,
             use: '<quote|reply|number>',
         },
         async(Void, citel, text,{ isCreator }) => {
-             if (!citel.isGroup) return citel.reply('This Command is only for group.')
+             if (!citel.isGroup) return citel.reply('My Master Yasiya, This Command is only for group Sir.')
             const groupAdmins = await getAdmin(Void, citel)
             const isAdmins = citel.isGroup ? groupAdmins.includes(citel.sender) : false;
             if (!isAdmins) return citel.reply('This command is only for Admin.')
@@ -121,7 +121,7 @@ cmd({
 cmd({
             pattern: "unblock",
             desc: "Unblocked to the quoted user.",
-            category: "owner",
+            category: "Yasiya Ofc",
             filename: __filename,
 
         },
@@ -139,7 +139,7 @@ cmd({
     cmd({
         pattern: "ujid",
         desc: "get jid of all user in a group.",
-        category: "owner",
+        category: "Yasiya Ofc",
         filename: __filename,
     },
     async(Void, citel, text,{ isCreator }) => {
@@ -159,7 +159,7 @@ cmd({
 cmd({
         pattern: "tagall",
         desc: "Tags every person of group.",
-        category: "group",
+        category: "Yasiya Ofc",
         filename: __filename,
     },
     async(Void, citel, text,{ isCreator }) => {
@@ -174,7 +174,7 @@ cmd({
 ══✪〘   *TAG ALL SYSTEM FORZEN MD*   〙✪══
 
 ➲ *Message :* ${text ? text : "blank"}\n\n
-➲ *Author:* ${citel.pushName} 🔖
+➲ *Author:* ${citel.pushName} My Master🔖
 `
         for (let mem of participants) {
             textt += `📍 @${mem.id.split("@")[0]}\n`;
@@ -192,7 +192,7 @@ cmd({
 cmd({
             pattern: "request",
             desc: "Sends requst to main Bot developer.",
-            category: "group",
+            category: "Yasiya Ofc",
             filename: __filename,
             use: '<text>',
         },
@@ -226,7 +226,7 @@ cmd({
 cmd({
             pattern: "retrive",
             desc: "Copies and Forwords viewonce message.",
-            category: "group",
+            category: "Yasiya Ofc",
             filename: __filename,
             use: '<reply to a viewonce message.>',
         },
@@ -250,7 +250,7 @@ cmd({
 cmd({
             pattern: "rwarn",
             desc: "Deletes all previously given warns of quoted user.",
-            category: "group",
+            category: "Yasiya Ofc",
             filename: __filename,
             use: '<quote|reply|number>',
         },
@@ -265,7 +265,7 @@ cmd({
 cmd({
             pattern: "poll",
             desc: "Makes poll in group.",
-            category: "group",
+            category: "Yasiya Ofc",
             filename: __filename,
             use: `question;option1,option2,option3.....`,
         },
@@ -293,7 +293,7 @@ cmd({
             pattern: "profile",
 	    react: "🧙‍♂️",
             desc: "Shows profile of user.",
-            category: "group",
+            category: "Yasiya Ofc",
             filename: __filename,
         },
         async(Void, citel, text) => {
@@ -390,7 +390,7 @@ cmd({
 cmd({
             pattern: "rank",
             desc: "Sends rank card of user.",
-            category: "group",
+            category: "Yasiya Ofc",
             filename: __filename,
         },
         async(Void, citel, text) => {
@@ -471,7 +471,7 @@ cmd({
             pattern: "leaderboard",
             alias: ["deck"],
             desc: "To check leaderboard",
-            category: "general",
+            category: "Yasiya Ofc",
             filename: __filename,
         },
         async(Void, citel) => {
@@ -546,7 +546,7 @@ cmd({
             pattern: "promote",
 	    react: "🎖️",
             desc: "Provides admin role to replied/quoted user",
-            category: "group",
+            category: "Yasiya Ofc",
             filename: __filename,
             use: '<quote|reply|number>',
         },
@@ -574,7 +574,7 @@ cmd({
             pattern: "kick",
 	    react: "👋",
             desc: "Kicks replied/quoted user from group.",
-            category: "group",
+            category: "Yasiya Ofc",
             filename: __filename,
             use: '<quote|reply|number>',
         },
@@ -601,7 +601,7 @@ cmd({
 cmd({
             pattern: "memegen",
             desc: "Write text on quoted image.",
-            category: "group",
+            category: "Yasiya Ofc",
             filename: __filename,
             use: '<text>',
         },
@@ -629,7 +629,7 @@ cmd({
             pattern: "group",
 	    react: "🧑‍🎨",
 	    desc: "mute and unmute group.",
-            category: "group",
+            category: "Yasiya Ofc",
             filename: __filename,
         },
         async(Void, citel, text) => {
@@ -641,13 +641,13 @@ cmd({
             if (!citel.isGroup) return citel.reply(tlang().group);
             if (!isBotAdmins) return citel.reply(tlang().botAdmin);
             if (!isAdmins) return citel.reply(tlang().admin);
-            if (text.split(" ")[0] === "close") {
+            if (text.split(" ")[0] === "mute") {
                 await Void.groupSettingUpdate(citel.chat, "announcement")
-                    .then((res) => reply(`Group Chat Muted :)`))
+                    .then((res) => reply(`Group Chat Muted My Master:)`))
                     .catch((err) => console.log(err));
-            } else if (text.split(" ")[0] === "open") {
+            } else if (text.split(" ")[0] === "unmute") {
                 await Void.groupSettingUpdate(citel.chat, "not_announcement")
-                    .then((res) => reply(`Group Chat Unmuted :)`))
+                    .then((res) => reply(`Group Chat Unmuted My Master:)`))
                     .catch((err) => console.log(err));
             } else {
 
@@ -660,7 +660,7 @@ cmd({
             pattern: "setppgroup",
 	    react: "👨‍🎨",
             desc: "Sets a profile pic in Group..",
-            category: "group",
+            category: "Yasiya Ofc",
             filename: __filename,
         },
         async(Void, citel, text) => {
@@ -692,7 +692,7 @@ cmd({
             pattern: "hidetag",
             alias: ["htag"],
             desc: "Tags everyperson of group without mentioning their numbers",
-            category: "group",
+            category: "Yasiya Ofc",
             filename: __filename,
             use: '<text>',
         },
@@ -719,7 +719,7 @@ cmd({
             react: "🚫",
             desc: "Add that person in group",
             fromMe: true,
-            category: "group",
+            category: "Yasiya Ofc",
             filename: __filename,
             use: '<number>',
         },
@@ -742,7 +742,7 @@ cmd({
 cmd({
             pattern: "gjid",
             desc: "Sends chat id of every groups.",
-            category: "group",
+            category: "Yasiya Ofc",
             filename: __filename,
         },
         async(Void, citel, text,{ isCreator }) => {
@@ -771,7 +771,7 @@ cmd({
         pattern: "demote",
 	react: "⤵️",
         desc: "Demotes replied/quoted user from group",
-        category: "group",
+        category: "Yasiya Ofc",
         filename: __filename,
         use: '<quote|reply|number>',
     },
@@ -800,7 +800,7 @@ cmd({
             pattern: "del",
             alias: ["delete"],
             desc: "Deletes message of any user",
-            category: "group",
+            category: "Yasiya Ofc",
             filename: __filename,
             use: '<quote/reply message.>',
         },
@@ -839,7 +839,7 @@ cmd({
 cmd({
             pattern: "checkwarn",
             desc: "Check warns",
-            category: "group",
+            category: "Yasiya Ofc",
             filename: __filename,
             use: '<quoted/reply user.>',
         },
@@ -865,7 +865,7 @@ cmd({
             pattern: "block",
             desc: "blocks that person",
             fromMe: true,
-            category: "owner",
+            category: "Yasiya Ofc",
             filename: __filename,
             use: '<quote/reply user.>',
         },
@@ -885,7 +885,7 @@ cmd({
         alias: ["bc"],
         desc: "Bot makes a broadcast in all groups",
         fromMe: true,
-        category: "group",
+        category: "Yasiya Ofc",
         filename: __filename,
         use: '<text for broadcast.>',
     },

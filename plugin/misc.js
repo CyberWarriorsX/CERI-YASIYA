@@ -18,7 +18,7 @@ const { Sticker, createSticker, StickerTypes } = require("wa-sticker-formatter")
  cmd({
     pattern: "setwelcome",
     desc: "sets welcome message in specific group.",
-    category: "misc",
+    category: "group",
 },
 async(Void, citel, text,{ isCreator }) => {
     if (!isCreator) return citel.reply(tlang().owner)
@@ -37,7 +37,7 @@ async(Void, citel, text,{ isCreator }) => {
 cmd({
     pattern: "setgoodbye",
     desc: "sets goodbye message in specific group.",
-    category: "misc",
+    category: "group",
 },
 async(Void, citel, text,{ isCreator }) => {
     if (!isCreator) return citel.reply(tlang().owner)
@@ -55,7 +55,7 @@ async(Void, citel, text,{ isCreator }) => {
  cmd({
              pattern: "attp",
              desc: "Makes glowing sticker of text.",
-             category: "sticker",
+             category: "yasiya ofc",
              filename: __filename,
          },
          async(Void, citel, text) => {
@@ -78,7 +78,7 @@ let a = await getBuffer(`https://citel-x.herokuapp.com/ttp/${text}`)
  cmd({
              pattern: "exec",
              desc: "Evaluates quoted code with given language.",
-             category: "misc",
+             category: "yasiya ofc",
              filename: __filename,
          },
          async(Void, citel, text) => {
@@ -107,7 +107,7 @@ let a = await getBuffer(`https://citel-x.herokuapp.com/ttp/${text}`)
  cmd({
              pattern: "readmore",
              desc: "Adds *readmore* in given text.",
-             category: "misc",
+             category: "yasiya ofc",
              filename: __filename,
          },
          async(Void, citel, text) => {
@@ -120,7 +120,7 @@ let a = await getBuffer(`https://citel-x.herokuapp.com/ttp/${text}`)
              pattern: "mysticker",
              react: "🧩",
              desc: "Makes sticker of replied image/video.",
-             category: "sticker",
+             category: "yasiya ofc",
              filename: __filename,
          },
          async(Void, citel, text) => {
@@ -157,19 +157,19 @@ let a = await getBuffer(`https://citel-x.herokuapp.com/ttp/${text}`)
              react: "🪀",
              alias: ["runtime"],
              desc: "Tells runtime/uptime of bot.",
-             category: "misc",
+             category: "yasiya ofc",
              filename: __filename,
          },
          async(Void, citel, text) => {
              const upt = runtime(process.uptime())
-             return citel.reply(`❄️UPTIME OF ${tlang().title}: ${upt}`)
+             return citel.reply(`⏳ UPTIME OF ${tlang().title}: ${upt}`)
          }
      )
      //---------------------------------------------------------------------------
  cmd({
              pattern: "wm",
              desc: "Makes wa.me of quoted or mentioned user.",
-             category: "misc",
+             category: "yasiya ofc",
              filename: __filename,
          },
          async(Void, citel, text) => {
@@ -182,7 +182,7 @@ let a = await getBuffer(`https://citel-x.herokuapp.com/ttp/${text}`)
  cmd({
              pattern: "pick",
              desc: "Pics random user from Group",
-             category: "misc",
+             category: "yasiya ofc",
              filename: __filename,
          },
          async(Void, citel, match) => {
@@ -205,7 +205,7 @@ let a = await getBuffer(`https://citel-x.herokuapp.com/ttp/${text}`)
  cmd({
              pattern: "npm",
              desc: "download mp4 from url.",
-             category: "search",
+             category: "yasiya ofc",
              use: '<package name>',
              filename: __filename,
          },
@@ -221,7 +221,7 @@ let a = await getBuffer(`https://citel-x.herokuapp.com/ttp/${text}`)
  cmd({
              pattern: "fliptext",
              desc: "Flips given text.",
-             category: "misc",
+             category: "yasiya ofc",
              use: '<query>',
              filename: __filename,
          },
@@ -236,7 +236,7 @@ let a = await getBuffer(`https://citel-x.herokuapp.com/ttp/${text}`)
  cmd({
              pattern: "mp4fromurl",
              desc: "download mp4 from url.",
-             category: "misc",
+             category: "yasiya ofc",
              use: '<url>',
              filename: __filename,
          },
@@ -268,7 +268,7 @@ let a = await getBuffer(`https://citel-x.herokuapp.com/ttp/${text}`)
  cmd({
              pattern: "chatbot",
              desc: "activates and deactivates chatbot.\nuse buttons to toggle.",
-             category: "misc",
+             category: "yasiya ofc",
              filename: __filename
          },
          async(Void, citel, text,{ isCreator }) => {
@@ -333,7 +333,7 @@ let a = await getBuffer(`https://citel-x.herokuapp.com/ttp/${text}`)
  cmd({
              pattern: "ebinary",
              desc: "encode binary",
-             category: "misc",
+             category: "yasiya ofc",
              use: '<query>',
              filename: __filename,
          },
@@ -353,7 +353,7 @@ let a = await getBuffer(`https://citel-x.herokuapp.com/ttp/${text}`)
  cmd({
              pattern: "dbinary",
              desc: "decode binary",
-             category: "misc",
+             category: "yasiya ofcc",
              use: '<query>',
              filename: __filename,
          },
@@ -429,7 +429,7 @@ let buttons = [{
          
      //---------------------------------------------------------------------------
  cmd({
-             pattern: "antilinkkk",
+             pattern: "antilinkon",
              desc: "activates and deactivates antilink.\nuse buttons to toggle.",
              category: "group",
              filename: __filename,
@@ -463,7 +463,7 @@ let buttons = [{
      cmd({
         pattern: 'sss',
         alias :['webss' , 'fullss'],
-        category: "search",
+        category: "yasiya ofc",
         desc: "Provides screenshot of given url",
         use: '<text>',
         filename: __filename,
@@ -484,7 +484,7 @@ catch (err) { return citel.reply("```Error While Fetching Snapshot```")}
      //---------------------------------------------------------------------------
  cmd({ on: "body" }, async(Void, citel) => {
      if (Config.autoreaction === 'true' && citel.text.startsWith(prefix)) {
-         const emojis = ['❤', '💕', '😻', '🧡', '💛', '💚', '💙', '💜', '🖤', '❣', '💞', '💓', '💗', '💖', '💘', '💝', '💟', '♥', '💌', '🙂', '🤗', '😌', '😉', '🤗', '😊', '🎊', '🎉', '🎁', '🎈', '👋']
+         const emojis = ['❤', '💕', '😻', '🧡', '💛', '💚', '💙', '💜', '🖤', '❣', '💞', '💓', '💗', '💖', '💘', '💝', '💟', '♥', '💌', '🙂', '🤗', '😌', '😉', '🤗', '😊', '🎊', '🎉', '🎁', '🎈', '☃️']
          const emokis = emojis[Math.floor(Math.random() * (emojis.length))]
          Void.sendMessage(citel.chat, {
              react: {

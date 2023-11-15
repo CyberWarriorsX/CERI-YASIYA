@@ -113,7 +113,7 @@ cmd({
 	react: "🏆",
         alias: ["git", "sc", "script"],
         desc: "Sends info about repo.",
-        category: "general",
+        category: "info",
         filename: __filename,
     },
     async(Void, citel) => {
@@ -159,7 +159,7 @@ cmd({
 	react: "📀",
         alias: ["about"],
         desc: "To check bot status",
-        category: "general",
+        category: "info",
         filename: __filename,
     },
     async(Void, citel) => {
@@ -167,7 +167,7 @@ cmd({
         timestampe = speed();
         latensie = speed() - timestampe;
         let ter = `
-👨‍💻 _*FORZEN-MD SYSTEM INFO*_ 👨‍💻
+👨‍💻 _*FORZEN-MD SUPPORTER BOT SYSTEM INFO*_ 👨‍💻
 
 *🌟Description:* FORZEN-MD WA SIMPLE USER BOT.
 *⚡Speed:* ${latensie.toFixed(4)} ms
@@ -207,7 +207,7 @@ cmd({
     pattern: "theme",
     react: "🪁",
     desc: "To find all themes",
-    category: "general",
+    category: "info",
     filename: __filename,
 },
 async(Void, citel,text,{isCreator}) => {

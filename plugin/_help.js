@@ -57,10 +57,8 @@ Secktor.cmd({
                 let str = `╭────《 ` + fancytext(Config.ownername.split(' ')[0], 58) + ` 》─────⊷\n`
                 str +=
                     '```' + `│ ╭──────────────◆
-│ │ _*FORZEN-MD SUP GROUP BOT*_
+│ │  _*FORZEN-MD SUP GROUP BOT*_
 │ │ 🤵‍♂️ USER:- ${citel.pushName}
-│ │ 💃🏼 DEVELOPER:- YASIYA-OFC
-│ │ 🌙 SUPPORTER:- MR-INDUWARA
 │ │ 🕹️ PREFIX:- [ ${prefix} ]
 │ │ 🤹‍♂️ OWNER:- ${Config.ownername}
 │ │ 🔌 PLUGINS:- ${commands.length}
@@ -69,7 +67,23 @@ Secktor.cmd({
 │ │ 📟 MEM:- ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
 │ ╰──────────────◆
 ╰───────────────⊷\n
+
+╭────《 𝐅𝐎𝐑𝐙𝐄𝐍 𝐌𝐃 𝐃𝐄𝐓𝐀𝐈𝐋𝐒 》─────⊷
+│ ╭──────────────◆
+│ │ 💃🏼 CONTACT FOR DEVELOPERS :
+│ │ ⛤ wa.me/+94760018892 ( DARK YASIYA )
+│ │ ⛤ wa.me/+94740264767  ( INDUWARA )
+│ │ ⛤ wa.me/+94705847200 ( DARK CHAMA )
+│ │
+│ │ ⚖️ YOU TUBE CHANNEL :
+│ │ ⛤ https://youtube.com/@yasiya_yt
+│ │ 
+│ │ 🪀 WHATSAPP CHANNEL :
+│ │ ⛤ https://whatsapp.com/channel/0029Va81UHiLikg0Hy7c9c1b
+│ ╰──────────────◆
+╰━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n
 ` + '```'
+
                 for (const category in cmds) 
                 {
                    str += `╭────🧙‍♂️ *${tiny(category)}* 🧙‍♂️\n` ;

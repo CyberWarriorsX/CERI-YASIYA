@@ -15,7 +15,7 @@ const util = require('util')
 //---------------------------------------------------------------------------
 cmd({
             pattern: "addnote",
-            category: "yasiya ofc",
+            category: "owner",
             desc: "Adds a note on db.",
             filename: __filename
         },
@@ -31,7 +31,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "qr",
-            category: "yasiya ofc",
+            category: "owner",
             filename: __filename,
             desc: "Sends CitelsVoid Qr code to scan and get your session id."
         },
@@ -72,12 +72,12 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "unban",
-            category: "yasiya ofc",
+            category: "misc",
             filename: __filename,
             desc: "Unbans banned user (from using bot)."
         },
         async(Void, citel, text,{ isCreator }) => {
-            if (!isCreator) return citel.reply("This command is onlt for my Master Yasiya")
+            if (!isCreator) return citel.reply("This command is onlt for my Owner")
             try {
                 let users = citel.mentionedJid ? citel.mentionedJid[0] : citel.msg.contextInfo.participant || false;
                 if (!users) return citel.reply("Please mention any user.❌")
@@ -105,14 +105,14 @@ cmd({
         pattern: "img2url",
         react: "🖇️",
         alias : ['createurl'],
-        category: "yasiya ofc",
+        category: "misc",
         filename: __filename,
         desc: "image to url."
     },
     async(Void, citel, text) => {
-        if (!citel.quoted) return await citel.reply(`*Reply To Any Image/Video To Get Url My Master*`)
+        if (!citel.quoted) return await citel.reply(`*Reply To Any Image/Video To Get Url*`)
         let mime = citel.quoted.mtype
-        if(mime !='videoMessage' && mime !='imageMessage' ) return await citel.reply("Uhh Please, Reply To An Image/Video My Master")
+        if(mime !='videoMessage' && mime !='imageMessage' ) return await citel.reply("Uhh Please, Reply To An Image/Video")
         let media = await Void.downloadAndSaveMediaMessage(citel.quoted);
         let anu = await TelegraPh(media);
         await citel.reply('*Here is URL of your media.*\n'+util.format(anu));
@@ -124,12 +124,12 @@ cmd({
 cmd({
     pattern: "trt",
     alias :['translate'],
-    category: "yasiya ofc",
+    category: "misc",
     filename: __filename,
     desc: "Translate\'s given text in desird language."
 },
 async(Void, citel, text) => {
-    if(!text && !citel.quoted) return await citel.reply(`*My Master Please Give Me Text. Example: _${prefix}trt en Who are you_*`);
+    if(!text && !citel.quoted) return await citel.reply(`*Please Give Me Text. Example: _${prefix}trt en Who are you_*`);
     const translatte = require("translatte");
     let lang = text ? text.split(" ")[0].toLowerCase() : 'en';
     if (!citel.quoted)  { text = text.replace( lang , "");  }
@@ -141,7 +141,7 @@ async(Void, citel, text) => {
     //---------------------------------------------------------------------------
 cmd({
             pattern: "shell",
-            category: "yasiya ofc",
+            category: "owner",
             filename: __filename,
             desc: "Runs command in Heroku(server) shell."
         },
@@ -159,7 +159,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "eval",
-            category: "yasiya ofc",
+            category: "owner",
             filename: __filename,
             desc: "Runs js code on node server."
         },
@@ -178,7 +178,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "delnote",
-            category: "yasiya ofc",
+            category: "owner",
             filename: __filename,
             desc: "Deletes note from db."
         },
@@ -193,7 +193,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "delallnotes",
-            category: "yasiya ofc",
+            category: "owner",
             filename: __filename,
             desc: "Deletes all notes from db."
         },
@@ -209,7 +209,7 @@ cmd({
 cmd({
             pattern: "ban",
             react: "🚫",
-            category: "yasiya ofc",
+            category: "owner",
             filename: __filename,
             desc: "Bans user from using bot."
         },
@@ -222,16 +222,16 @@ cmd({
                 sck1.findOne({ id: users }).then(async(usr) => {
                     if (!usr) {
                         await new sck1({ id: users, ban: "true" }).save()
-                        return citel.reply(`_My Master Yasiya Banned ${usr.name} from Using Commands._`)
+                        return citel.reply(`_Banned ${usr.name} from Using Commands._`)
                     } else {
                         if (usr.ban == "true") return citel.reply(`${pushnamer} is already Banned from Using Commands`)
                         await sck1.updateOne({ id: users }, { ban: "true" })
-                        return citel.reply(`_My Master Yasiya Successfully Banned ${usr.name} from Using Commands._`)
+                        return citel.reply(`_Successfully Banned ${usr.name} from Using Commands._`)
                     }
                 })
             } catch (e) {
                 console.log(e)
-                return citel.reply("My Master Yasiya Please mention any user.❌ ")
+                return citel.reply("Please mention any user.❌ ")
             }
 
 
@@ -240,7 +240,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
         pattern: "allnotes",
-        category: "yasiya ofc",
+        category: "owner",
         filename: __filename,
         desc: "Shows list of all notes."
     },
